@@ -32,7 +32,7 @@ function powScript(){
   var newNumber = Math.round(number);
   var newDegree = parseInt(degree);
 
-  alert("result = " + myPow(newNumber, newDegree));
+  console.log(myPow(newNumber, newDegree));
 }
 
 function myPow(newNumber, newDegree) {
