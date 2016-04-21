@@ -15,8 +15,8 @@ function userNameFunction(){
   for (var i = 0; i < userArray.length; i++) {
     if ( checkUser === userArray[i] ) {
       checkFlag = true;
-      break;
     }
+    break;
   }
   if ( checkFlag ) {
     alert( checkUser + ", вы успешно вошли");
@@ -36,25 +36,20 @@ function powScript(){
 }
 
 function myPow(newNumber, newDegree) {
-  if (newDegree > 1) {
-    var i = 1;
-    var result = newNumber;
-    do {
+  var tempDegree = Math.abs(newDegree);
+  var result = newNumber;
+  do {
       result *= newNumber;
-      i++;
-    } while (i < newDegree)
-    return result;
-  } else if (newDegree === 1) {
-    return newNumber;
-  } else if (newDegree === 0) {
+      tempDegree--;
+    } while (tempDegree > 1)
+
+  if ( newDegree === 0 ) {
     return 1;
-  } else if (newDegree < 0) {
-    var i = -1;
-    var result = newNumber;
-    while (i > newDegree) {
-      result *= newNumber;
-      i--;
-    }
-    return 1 / result;
+  } else if ( newDegree === 1 ) {
+    return newNumber;
+  } else if ( newDegree > 0 ) {
+    return result;
+  } else if ( newDegree < 0) {
+    return 1/result;
   }
 }
