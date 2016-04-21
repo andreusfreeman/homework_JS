@@ -16,7 +16,6 @@ function userNameFunction(){
     if ( checkUser === userArray[i] ) {
       checkFlag = true;
     }
-    break;
   }
   if ( checkFlag ) {
     alert( checkUser + ", вы успешно вошли");
