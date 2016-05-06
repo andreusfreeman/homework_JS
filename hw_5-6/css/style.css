@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.output {
+  font-size: 150px;
+  height: 160px;
+  font-weight: bold;
+}
+.reset {
+  float: right;
+  width: 200px;
+}
+.startPause {
+  width: 200px;
+}
+.outputMiliseconds {
+  overflow: hidden;
+  width: 100%;
+}
+.milisecond {
+  float: right;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.button-place {
+  width: 100%;
+}
