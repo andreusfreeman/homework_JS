@@ -17,4 +17,8 @@ $(function(){
   }, function() {
       $(this).next("em").animate({opacity: "hide"}, "fast");
   });
+
+  $('.button-info button').on('click', function(){
+    $("em").toggle();
+  });
 });

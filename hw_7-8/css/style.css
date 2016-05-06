@@ -38,22 +38,51 @@
   margin: 0 auto;
   margin-top: 10px;
   width: 50%;
-  border: 1px solid #ccc;
   background-color: #ffffff;
 }
+.form {
+  border: 1px solid grey;
+  height: 150px;
+  padding: 10px;
+  background: linear-gradient(to top, #E1E211, #103ced);
+}
 .form div {
-  margin: 15px 0px 0px 20px;
+  margin: 15px 10px 10px 20px;
+}
+.form label {
+  width: 70px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 10px green;
+  font-size: 15px;
+}
+.form input {
+  height: 25px;
 }
 .form em {
-    /*font-weight: normal;
-    width: 180px;
-    height: 45px;
-    position: absolute;
-    top: -85px;
-    left: -15px;
+    font-weight: normal;
+    background-color: #bbb;
     text-align: center;
-    padding: 20px 12px 10px;
-    font-style: normal;
-    z-index: 2;*/
+    padding: 10px;
     display: none;
+}
+.button-info button {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  background-color: #f0ad4e;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-box a {
+  display: block;
+  float: right;
+  font-style: italic;
+}
+.text-box a {
+  font-style: italic;
 }
