@@ -34,3 +34,26 @@
 .text-box-third {
   margin: 20px 30px 50px 30px;
 }
+.form-box {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.form div {
+  margin: 15px 0px 0px 20px;
+}
+.form em {
+    /*font-weight: normal;
+    width: 180px;
+    height: 45px;
+    position: absolute;
+    top: -85px;
+    left: -15px;
+    text-align: center;
+    padding: 20px 12px 10px;
+    font-style: normal;
+    z-index: 2;*/
+    display: none;
+}

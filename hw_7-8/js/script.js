@@ -11,4 +11,10 @@ $(function(){
     $('.'+divName).show();
     return false;
   })
+
+  $(".form input").hover(function() {
+      $(this).next("em").animate({opacity: "show"}, "slow");
+  }, function() {
+      $(this).next("em").animate({opacity: "hide"}, "fast");
+  });
 });
