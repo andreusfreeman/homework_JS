@@ -7,13 +7,14 @@ function startPause() {
     increment();
     document.querySelector('.startPause').innerHTML = 'Pause';
   }  else {
+    clearInterval(stopWatch);
     running = 0;
     document.querySelector('.startPause').innerHTML = 'Cont...';
   }
 }
 
 function resetStopWatch() {
-  clearTimeout(stopWatch);
+  clearInterval(stopWatch);
   running = 0;
   time = 0;
   document.querySelector('.startPause').innerHTML = 'Start';
@@ -22,8 +23,7 @@ function resetStopWatch() {
 }
 
 function increment() {
-  if (running == 1) {
-      stopWatch = setTimeout(function() {
+      stopWatch = setInterval(function() {
       time++;
       var hours = Math.floor(time/100/60/60) % 60;
       var mins = Math.floor(time/100/60) % 60;
@@ -40,7 +40,5 @@ function increment() {
       }
       document.querySelector('.output').innerHTML = hours + ':' + mins + ':' + secs;
       document.querySelector('.milisecond').innerHTML = mlsecs;
-      increment();
     }, 10);
-  }
 }
