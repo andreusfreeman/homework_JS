@@ -23,22 +23,26 @@ body {
   width: 200px;
   display: block;
   margin: 0 auto;
+	background: pink;
+  height: 50px;
+  padding: 10px;
 }
 .checkbox-list-css {
-  width: 200px;
-  margin: 0 auto;
   text-align: center;
   color: blue;
+  margin: 50px;
+	background: grey;
+	padding: 10px;
 }
 
-input[type=checkbox] {
+.checkbox-list-css input[type=checkbox] {
 	position: absolute;
 	clip: rect(0, 0, 0, 0);
 }
-label {
+.checkbox-list-css label {
 	cursor: pointer;
 }
-label:after {
+.checkbox-list-css label:after {
 	content: " ";
 	display: inline-block;
 	width: 17px;
@@ -48,12 +52,113 @@ label:after {
 	top: 3px;
 	margin-left: 15px;
 }
-input[type=checkbox]:checked + label:after {
+.checkbox-list-css input[type=checkbox]:checked + label:after {
   background-position: 0 -17px;
 }
-label:hover:after {
+.checkbox-list-css label:hover:after {
   background-position: 0 -34px;
 }
-input[type=checkbox]:checked + label:hover:after {
+.checkbox-list-css input[type=checkbox]:checked + label:hover:after {
   background-position: 0 -51px;
+}
+
+/*checkbox in jquery*/
+.checkbox-list-jquery {
+  margin: 50px;
+	background: #99CCFF;
+	padding: 10px;
+  text-align: center;
+}
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px;
+}
+.checkbox-list-jquery div {
+	margin-bottom: 10px;
+}
+.niceCheckDisabled {
+	background-image: url(../img/checkbox-disabled.png);
+}
+nav {
+    background-color:rgb(255,100,100);
+    padding:10px 0;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+    z-index: 2;
+}
+nav li ul {
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+ul.sub-menu {
+    display:none;
 }

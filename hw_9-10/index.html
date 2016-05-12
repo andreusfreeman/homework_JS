@@ -3,17 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Fifth Homework JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jcarousel.vertical.css">
     <link rel="stylesheet" href="css/jquery.selectbox.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/jcarousel.vertical.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jquery.selectbox-0.6.1.js"></script>
+    <script src="js/checkbox-jquery.js"></script>
+    <script src="js/jquery.color.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
   </head>
   <body>
+    <nav>
+    <ul>
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown">
+            <a href="#">Nav 3</a>
+            <ul class="sub-menu">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3.4</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.4.1</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.2.1</a></li>
+                                <li><a href="#">Nav 3.4.2.2</a></li>
+                                <li><a href="#">Nav 3.4.2.3</a></li>
+                                <li><a href="#">Nav 3.4.2.4</a></li>
+                                <li><a href="#">Nav 3.4.2.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.4.3</a></li>
+                        <li><a href="#">Nav 3.4.4</a></li>
+                        <li><a href="#">Nav 3.4.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nav 4</a></li>
+        <li><a href="#">Nav 5</a></li>
+    </ul>
+</nav>
+    </div>
     <div class="wrapper">
       <div class="jcarousel-wrapper">
         <div class="jcarousel">
@@ -36,6 +76,7 @@
       </div>
     </div>
     <div class="select-plagin">
+      <h3>Non standart select</h3>
 			<select id="default-usage-select">
 				<option value="--">Please select your favorite color</option>
 				<option value="01">Red</option>
@@ -49,6 +90,7 @@
 			</select>
 		</div>
     <div class="checkbox-list-css">
+      <h3>Checkbox css</h3>
       <div>
         <input type="checkbox" id="checkbox-first" />
         <label for="checkbox-first">Checkbox #1</label>
@@ -62,7 +104,21 @@
         <label for="checkbox-third">Checkbox #3</label>
       </div>
     </div>
-
+    <div class="checkbox-list-jquery">
+      <h3>Checkbox jQuery</h3>
+      <div>
+        <label for="ch3">label 3</label>
+        <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" value="3" />
+      </div>
+      <div>
+        <label for="ch2">label 2</label>
+        <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+      </div>
+      <div>
+        <label for="ch1">label 1</label>
+        <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" value="1" />
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

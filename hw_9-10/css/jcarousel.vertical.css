@@ -2,8 +2,8 @@
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
-    width: 620px;
-    height: 420px;
+    width: 600px;
+    height: 400px;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
@@ -109,12 +109,15 @@
     font-size: 11px;
     line-height: 14px;
     min-width: 14px;
+
     background: #fff;
     color: #4E443C;
-    border-radius: 20px;
-    padding: 1px;
+    border-radius: 14px;
+    padding: 3px;
     text-align: center;
+
     margin-right: 2px;
+
     opacity: .75;
 }
 
