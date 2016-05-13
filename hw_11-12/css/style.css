@@ -1,4 +1,88 @@
-* {
+/** {
   padding: 0;
   margin: 0;
+}*/
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 100px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+h3 {
+  clear: both;
+  text-align: center;
+  color: red;
+}
+
+.template-simple {
+  clear: both;
+  background-color: green;
+  width: 420px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.template-simple li {
+  padding: 5px;
+}
+.template-simple div {
+  margin: 20px;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.image {
+  text-align: center;
+}
+.template-lodash {
+  clear: both;
+  background-color: blue;
+  width: 420px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: white;
+}
+.template-lodash li {
+  padding: 5px;
+}
+.template-lodash div {
+  margin: 20px;
 }

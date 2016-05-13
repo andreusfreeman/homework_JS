@@ -4,9 +4,89 @@
     <meta charset="utf-8">
     <title>Sixth Homework JS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script></head>
-  <body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js"></script>
+    <script src="js/jquery.carusel.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/template_script.js"></script>
+  </head>
+  <body>
+    <div class="carousel-arrow-left"><span>Влево</span></div>
+    <div class="carousel-hider">
+      <ul class="carousel-list">
+        <li class="carousel-element"><img src="img/img1.jpg" alt="">
+          <p>Describe 1</p>
+        </li>
+        <li class="carousel-element"><img src="img/img2.jpg" alt="">
+          <p>Describe 2</p>
+        </li>
+        <li class="carousel-element"><img src="img/img3.jpg" alt="">
+          <p>Describe 3</p>
+        </li>
+        <li class="carousel-element"><img src="img/img4.jpg" alt="">
+          <p>Describe 4</p>
+        </li>
+        <li class="carousel-element"><img src="img/img5.jpg" alt="">
+          <p>Describe 5</p>
+        </li>
+        <li class="carousel-element"><img src="img/img6.jpg" alt="">
+          <p>Describe 6</p>
+        </li>
+        <li class="carousel-element"><img src="img/img1.jpg" alt="">
+          <p>Describe 7</p>
+        </li>
+        <li class="carousel-element"><img src="img/img2.jpg" alt="">
+          <p>Describe 8</p>
+        </li>
+        <li class="carousel-element"><img src="img/img3.jpg" alt="">
+          <p>Describe 9</p>
+        </li>
+        <li class="carousel-element"><img src="img/img4.jpg" alt="">
+          <p>Describe 10</p>
+        </li>
+        <li class="carousel-element"><img src="img/img5.jpg" alt="">
+          <p>Describe 11</p>
+        </li>
+        <li class="carousel-element"><img src="img/img6.jpg" alt="">
+          <p>Describe 12</p>
+        </li>
+      </ul>
+    </div>
+    <div class="carousel-arrow-right"><span>Вправо</span></div>
+    <script type="text/html" id="easy-tmpl">
+      <div class="name"><%= name %></div>
+      <div class="image">
+        <img src="<%= foto %>" alt="Моє фото" width="200px" >
+      </div>
+      <div><%= almamater %></div>
+      <hr>
+      <div><%= aim %>
+        <ul>
+          <% for (var i=0; i < aims.length; i++){%>
+            <li><%= aims[i] %></li>
+          <% } %>
+        </ul>
+      </div>
+      <hr>
+      <div><%= phone %>
+        <br>
+        <%= numPhone %>
+      </div>
+      <div><%= faceBook %>
+        <br>
+        <a href="<%= linkFacebook %>">fb.com</a>
+      </div>
+      <hr>
+      <div><%= feedback %>
+        <br>
+        <%= textFeedBack %>
+      </div>
+    </script>
+    <h3>Template John Resig</h3>
+    <div class="template-simple">
+    </div>
+    <h3>Template Lodash</h3>
+    <div class="template-lodash">
+    </div>
   </body>
 </html>
