@@ -1,4 +1,23 @@
-/** {
+* {
   padding: 0;
   margin: 0;
-}*/
+}
+.template-simple {
+ width: 50%;
+ margin: 0 auto;
+ margin-top: 50px;
+}
+.button-check {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.questions {
+  padding: 5px;
+}
+.answers {
+  padding: 5px;
+}
+.answers li {
+  list-style: none;
+}
