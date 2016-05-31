@@ -1,7 +1,152 @@
-$test: red;
+$bgcHeader:   #ffffff;
+$bgcServices: #2a2d32;
+$bgcMain:     #f7f7f7;
+$bgcInfo:     #2a2d32;
+$bgcFooter:   #35383c;
+$bgcNav:      #2a2d32;
+$bgcSearch:   #35383c;
 
-body {
-  background-color: $test;
-  border: 1px solid blue;
-  border: 1px solid $test;
+* {
+  padding: 0;
+  margin: 0;
 }
+.header {
+  height: 1000px;
+  width: 100%;
+  background-color: $bgcHeader;
+}
+nav {
+  height: 55px;
+  width: 1160px;
+  background-color: $bgcNav;
+  margin: 0 auto;
+}
+.header__menu {
+  float: left;
+  height: 55px;
+   li {
+    list-style: none;
+    display: inline-block;;
+    color: white;
+    padding: 18px;
+  }
+}
+.header__search {
+  float: right;
+  padding: 7px;
+
+  input {
+    background-color: $bgcSearch;
+    border: 0px;
+    width: 240px;
+    height: 40px;
+    display: block;
+  }
+}
+.header__slider {
+  margin-top: 10px;
+}
+.services {
+  height: 500px;
+  width: 100%;
+  background-color: $bgcServices;
+}
+.services__wrapper {
+  margin: 0 auto;
+  width: 1160px;
+  height: 100%;
+  color: white;
+}
+.services__wrapper-title {
+  font-size: 24px;
+  color: #ffffff;
+  padding: 40px 0 40px 0;
+}
+.services__wrapper-link {
+}
+figure {
+  width: 25%;
+  float: left;
+
+  a {
+    text-decoration: none;
+  }
+  figcaption:hover {
+    color: #f4b60d;
+  }
+
+}
+.services__wrapper-link-schedule {
+}
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.main {
+  height: 780px;
+  width: 100%;
+  background-color: $bgcMain;
+}
+.info {
+  height: 320px;
+  width: 100%;
+  background-color: $bgcInfo;
+}
+.footer {
+  height: 60px;
+  width: 100%;
+  background-color: $bgcFooter;
+}
+
+/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('../img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('../img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
