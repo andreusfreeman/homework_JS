@@ -3,37 +3,41 @@
   margin: 0; }
 
 .header {
-  height: 1000px;
+  height: 100px;
   width: 100%;
   background-color: #ffffff; }
 
-nav {
+.menu {
   height: 55px;
   width: 1160px;
   background-color: #2a2d32;
   margin: 0 auto; }
 
-.header__menu {
+.menu__item {
   float: left;
   height: 55px; }
-  .header__menu li {
+  .menu__item li {
     list-style: none;
     display: inline-block;
     color: white;
     padding: 18px; }
 
-.header__search {
+.menu__search {
   float: right;
   padding: 7px; }
-  .header__search input {
+  .menu__search input {
     background-color: #35383c;
     border: 0px;
     width: 240px;
     height: 40px;
     display: block; }
 
-.header__slider {
+.slider {
   margin-top: 10px; }
+
+.explain {
+  height: 340px;
+  width: 1160px; }
 
 .services {
   height: 500px;
@@ -74,6 +78,26 @@ figcaption {
   height: 320px;
   width: 100%;
   background-color: #2a2d32; }
+
+.info__block {
+  width: 1160px;
+  margin: 0 auto; }
+
+.info__block__social {
+  width: 25%;
+  float: left; }
+
+.info__block__links {
+  width: 25%;
+  float: left; }
+
+.info__block__blogroll {
+  width: 25%;
+  float: left; }
+
+.info__block__about-us {
+  width: 25%;
+  float: left; }
 
 .footer {
   height: 60px;
