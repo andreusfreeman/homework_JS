@@ -6,7 +6,7 @@ var questions = {
   ],
   secondQuestion: 'What programming languages are taught frontend-developers?',
   secondVariant: [
-    [ 'HTML/Java/CSS', false], ['Javascript/HTML/PHP', false], ['HTML/CSS/Javascript', true]
+    [ 'HTML/Java/CSS', true], ['Javascript/HTML/PHP', false], ['HTML/CSS/Javascript', true]
   ],
   thirdQuestion: 'What is the most popular framework/library on Javascript?',
   thirdVariant: [
