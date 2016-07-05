@@ -153,6 +153,17 @@ $bgcSearch:   #35383c;
 }
 .slider {
   margin-top: 10px;
+  position: relative;
+}
+.slider-banner {
+  position: absolute;
+  top: 240px;
+  left: 90px;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 310px;
+  height: 200px;
 }
 .explain {
   height: 340px;
@@ -267,6 +278,7 @@ $bgcSearch:   #35383c;
 figure {
   width: 25%;
   float: left;
+  position: relative;
 
   a {
     text-decoration: none;
@@ -275,6 +287,28 @@ figure {
     color: #f4b60d;
   }
 
+}
+.services__wrapper-link-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 262px;
+  background-color: #248cec;
+  opacity: 0.9;
+  display: none;
+  cursor: pointer;
+}
+.services__wrapper-link-select {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  background-image: url(../img/select-icon.png);
+  background-position: 10px 43px;
+  width: 55px;
+  height: 55px;
+  display: none;
+  cursor: pointer;
 }
 .services__wrapper-link-schedule {
 }
@@ -305,7 +339,7 @@ figcaption {
 #accordion {
   width: 560px;
 }
-.acordion__header {
+.accordion__header {
   height: 40px;
   overflow: hidden;
   margin-top: 5px;
@@ -320,16 +354,35 @@ figcaption {
     margin-left: 50px;
   }
 }
-.acordion__header-select {
+.accordion__header-select {
   width: 40px;
   height: 40px;
   border-right: 1px solid #e8e8e8;
   float: left;
+
+}
+.accordion__header-select-icon {
+  display: block;
+  background-image: url(../img/pl-min-accordion.png);
+  background-position: 10px 2px;
+  width: 10px;
+  height: 12px;
+  margin-left: 14px;
+  margin-top: 14px;
 }
 .ui-accordion-header-active {
   background-color: #f4b60d;
   h3 {
     color: #ffffff;
+  }
+  .accordion__header-select-icon {
+    display: block;
+    background-image: url(../img/pl-min-accordion.png);
+    background-position: 0px 2px;
+    width: 10px;
+    height: 12px;
+    margin-left: 14px;
+    margin-top: 14px;
   }
 }
 .accordion-text {
@@ -357,6 +410,10 @@ figcaption {
   h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    color: #2a2d32;
+    cursor: pointer;
+  }
+  h3:hover {
     color: #248cec;
   }
 }
@@ -427,7 +484,7 @@ figcaption {
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 60px;
+    margin-left: 33px;
   }
 }
 .main__logo-item1 {
@@ -480,7 +537,7 @@ figcaption {
   height: 115px;
   float: left;
 }
-.main__logo-item1 {
+.main__logo-item6 {
   display: block;
   margin: 0 auto;
   background-image: url(../img/gear.png);
@@ -558,7 +615,7 @@ figcaption {
   overflow: hidden;
 }
 .footer__block {
-  width: 600px;
+  width: 1000px;
   margin: 0 auto;
   margin-top: 22px;
 
@@ -590,6 +647,15 @@ figcaption {
   font-size: 12px;
   font-family: Arial;
   margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  opacity: 0.2;
+}
+.footer__block-home {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial;
+  margin-left: 180px;
   margin-right: 10px;
   margin-top: 2px;
   opacity: 0.2;

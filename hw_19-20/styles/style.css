@@ -135,7 +135,18 @@
   height: 14px; }
 
 .slider {
-  margin-top: 10px; }
+  margin-top: 10px;
+  position: relative; }
+
+.slider-banner {
+  position: absolute;
+  top: 240px;
+  left: 90px;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 310px;
+  height: 200px; }
 
 .explain {
   height: 340px;
@@ -241,11 +252,34 @@
 
 figure {
   width: 25%;
-  float: left; }
+  float: left;
+  position: relative; }
   figure a {
     text-decoration: none; }
   figure figcaption:hover {
     color: #f4b60d; }
+
+.services__wrapper-link-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 262px;
+  background-color: #248cec;
+  opacity: 0.9;
+  display: none;
+  cursor: pointer; }
+
+.services__wrapper-link-select {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  background-image: url(../img/select-icon.png);
+  background-position: 10px 43px;
+  width: 55px;
+  height: 55px;
+  display: none;
+  cursor: pointer; }
 
 figcaption {
   text-align: center;
@@ -274,29 +308,46 @@ figcaption {
 #accordion {
   width: 560px; }
 
-.acordion__header {
+.accordion__header {
   height: 40px;
   overflow: hidden;
   margin-top: 5px;
   background-color: #ffffff;
   border: 1px solid #e8e8e8; }
-  .acordion__header h3 {
+  .accordion__header h3 {
     color: #2a2d32;
     font-size: 13px;
     display: block;
     margin-top: 13px;
     margin-left: 50px; }
 
-.acordion__header-select {
+.accordion__header-select {
   width: 40px;
   height: 40px;
   border-right: 1px solid #e8e8e8;
   float: left; }
 
+.accordion__header-select-icon {
+  display: block;
+  background-image: url(../img/pl-min-accordion.png);
+  background-position: 10px 2px;
+  width: 10px;
+  height: 12px;
+  margin-left: 14px;
+  margin-top: 14px; }
+
 .ui-accordion-header-active {
   background-color: #f4b60d; }
   .ui-accordion-header-active h3 {
     color: #ffffff; }
+  .ui-accordion-header-active .accordion__header-select-icon {
+    display: block;
+    background-image: url(../img/pl-min-accordion.png);
+    background-position: 0px 2px;
+    width: 10px;
+    height: 12px;
+    margin-left: 14px;
+    margin-top: 14px; }
 
 .accordion-text {
   font-size: 13px;
@@ -323,6 +374,9 @@ figcaption {
   .main__news__block__info h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    color: #2a2d32;
+    cursor: pointer; }
+  .main__news__block__info h3:hover {
     color: #248cec; }
 
 .main__news__block-author {
@@ -391,7 +445,7 @@ figcaption {
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 60px; }
+    margin-left: 33px; }
 
 .main__logo-item1 {
   display: block;
@@ -443,7 +497,7 @@ figcaption {
   height: 115px;
   float: left; }
 
-.main__logo-item1 {
+.main__logo-item6 {
   display: block;
   margin: 0 auto;
   background-image: url(../img/gear.png);
@@ -517,7 +571,7 @@ figcaption {
   overflow: hidden; }
 
 .footer__block {
-  width: 600px;
+  width: 1000px;
   margin: 0 auto;
   margin-top: 22px; }
   .footer__block span {
@@ -547,6 +601,15 @@ figcaption {
   font-size: 12px;
   font-family: Arial;
   margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  opacity: 0.2; }
+
+.footer__block-home {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial;
+  margin-left: 180px;
   margin-right: 10px;
   margin-top: 2px;
   opacity: 0.2; }

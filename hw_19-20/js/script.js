@@ -295,4 +295,15 @@ console.log(thirdItem);
 
 $(function(){
 	$( "#accordion" ).accordion();
+	$('figure').hover(
+          function(){
+              $(this).children('.services__wrapper-link-wrapper').fadeIn();
+							$(this).children('.services__wrapper-link-select').fadeIn();
+          },
+          function(){
+              $(this).children('.services__wrapper-link-wrapper').fadeOut();
+							$(this).children('.services__wrapper-link-select').fadeOut();
+
+          }
+      );
 });

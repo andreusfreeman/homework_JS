@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="dest/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
@@ -64,6 +63,7 @@
         <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
       </div>
+      <span class="slider-banner"></span>
     </div>
     <section class="explain">
       <div class="explain__block">
@@ -115,22 +115,34 @@
           <figure>
             <a href="#" class="services__wrapper-link-schedule">
               <img src="img/schedule.png" alt="">
-              <figcaption>Schedule Service</figcaption></a>
+              <figcaption>Schedule Service</figcaption>
+            </a>
+            <div class="services__wrapper-link-wrapper"></div>
+            <span class="services__wrapper-link-select"></span>
           </figure>
           <figure>
             <a href="#" class="services__wrapper-link-preventive">
               <img src="img/preventive.png" alt="">
-              <figcaption>Preventive Maintence</figcaption></a>
+              <figcaption>Preventive Maintence</figcaption>
+            </a>
+            <div class="services__wrapper-link-wrapper"></div>
+            <span class="services__wrapper-link-select"></span>
           </figure>
           <figure>
             <a href="#" class="services__wrapper-link-wheel">
               <img src="img/wheel.png" alt="">
-              <figcaption>Tire & Wheel Services</figcaption></a>
+              <figcaption>Tire & Wheel Services</figcaption>
+            </a>
+            <div class="services__wrapper-link-wrapper"></div>
+            <span class="services__wrapper-link-select"></span>
           </figure>
           <figure>
             <a href="#" class="services__wrapper-link-repair">
               <img src="img/repair.png" alt="">
-              <figcaption>Repair Services</figcaption></a>
+              <figcaption>Repair Services</figcaption>
+            </a>
+            <div class="services__wrapper-link-wrapper"></div>
+            <span class="services__wrapper-link-select"></span>
           </figure>
         </div>
       </div>
@@ -185,8 +197,10 @@
             Banners Place
           </span>
           <div id="accordion">
-            <div class="acordion__header">
-              <div class="acordion__header-select"></div>
+            <div class="accordion__header">
+              <div class="accordion__header-select">
+                <span class="accordion__header-select-icon"></span>
+              </div>
               <h3>ACCORDION PANEL 1</h3>
             </div>
             <div class="accordion-text">
@@ -197,8 +211,10 @@
                 odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
               </p>
             </div>
-            <div class="acordion__header">
-              <div class="acordion__header-select"></div>
+            <div class="accordion__header">
+              <div class="accordion__header-select">
+                <span class="accordion__header-select-icon"></span>
+              </div>
               <h3>ACCORDION PANEL 2</h3>
             </div>
             <div class="accordion-text">
@@ -209,8 +225,10 @@
                 suscipit faucibus urna.
               </p>
             </div>
-            <div class="acordion__header">
-              <div class="acordion__header-select"></div>
+            <div class="accordion__header">
+              <div class="accordion__header-select">
+                <span class="accordion__header-select-icon"></span>
+              </div>
               <h3>ACCORDION PANEL 3</h3>
             </div>
             <div class="accordion-text">
@@ -221,8 +239,10 @@
                 lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
               </p>
             </div>
-            <div class="acordion__header">
-              <div class="acordion__header-select"></div>
+            <div class="accordion__header">
+              <div class="accordion__header-select">
+                <span class="accordion__header-select-icon"></span>
+              </div>
               <h3>ACCORDION PANEL 4</h3>
             </div>
             <div class="accordion-text">
@@ -316,10 +336,11 @@
         <span class="footer__block-info">
           info@buildhome.web
         </span>
+        <span class="footer__block-home">
+          © 2014 Build Home
+        </span>
       </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/script-slider.js"></script>
-    <script src="js/jssor.slider.mini.js"></script>
+    <script src="dest/script.min.js"></script>
   </body>
 </html>
