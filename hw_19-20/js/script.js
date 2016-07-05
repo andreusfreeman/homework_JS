@@ -292,3 +292,7 @@ console.log(secondItem);
 //third item
 var thirdItem =_.sortBy(_.uniq(_.map(_.flattenDepth(_.map(customer, 'friends'), 1), 'name')));
 console.log(thirdItem);
+
+$(function(){
+	$( "#accordion" ).accordion();
+});
