@@ -1,0 +1,22 @@
+{
+  "name": "exam_goit",
+  "version": "1.0.0",
+  "description": "final exam goit",
+  "main": "\u001b[D\u001bhtml)",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/andreusfreeman/homework_JS"
+  },
+  "keywords": [
+    "exam"
+  ],
+  "author": "Andriy Natsyk",
+  "license": "ISC"
+}
