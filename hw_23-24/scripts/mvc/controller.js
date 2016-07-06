@@ -3,7 +3,7 @@
 		view.elements.addBtn.on('click', addItem);
 		view.elements.listContainer.on('click', '.item-delete', removeItem);
 		view.elements.listContainer.on('click', '.edit-delete', editItem);
-		
+
 		function addItem() {
 			if ( $('.item-add').html() === 'edit') {
 				var posItem = $('.item-value').attr('data-value');
@@ -17,7 +17,7 @@
 				model.addItem(newItem);
 				view.renderList(model.data);
 				view.elements.input.val('');
-			};			
+			};
 		};
 		function removeItem() {
 			var item = $(this).attr('data-value');
