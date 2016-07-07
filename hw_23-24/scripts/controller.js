@@ -1,5 +1,5 @@
 define(
-	'Controller',
+	'controller',
 	['jquery'],
 	function($) {
 		return function Controller(model, view) {

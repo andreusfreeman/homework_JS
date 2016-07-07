@@ -16,10 +16,10 @@ requirejs.config({
 require(
   [
     'jquery',
-    'Model',
+    'model',
     'tmpl',
-    'View',
-    'Controller'
+    'view',
+    'controller'
   ],
   function($, Model, tmpl, View, Controller) {
     $(function() {
